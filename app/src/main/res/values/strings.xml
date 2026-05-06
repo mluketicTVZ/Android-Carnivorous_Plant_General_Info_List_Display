@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Carnivorous Plants</string>
+
+    <!-- Titles -->
+    <string name="title_plant_list">Carnivorous Plants</string>
+    <string name="title_plant_detail">Plant Details</string>
+    <string name="title_plant_image">Plant Image</string>
+
+    <!-- Labels -->
+    <string name="label_habitat">Habitat</string>
+    <string name="label_trapping">Trapping Mechanism</string>
+    <string name="label_learn_more">Learn More on Wikipedia</string>
+    <string name="label_tap_image">Tap image to enlarge</string>
+    <string name="label_back">Back</string>
+
+    <!-- Menu -->
+    <string name="menu_share">Share</string>
+
+    <!-- Share Dialog -->
+    <string name="share_dialog_title">Share Plant</string>
+    <string name="share_dialog_message">Do you want to share information about this plant?</string>
+    <string name="share_dialog_yes">Share</string>
+    <string name="share_dialog_no">Cancel</string>
+    <string name="broadcast_shared">Plant shared successfully!</string>
+
+    <!-- Plant: Venus Flytrap -->
+    <string name="plant_venus_name">Venus Flytrap</string>
+    <string name="plant_venus_short">Active snap trap, native to the Carolinas</string>
+    <string name="plant_venus_long">The Venus flytrap (Dionaea muscipula) is perhaps the most famous carnivorous plant in the world. Its leaves have evolved into a hinged trap mechanism that snaps shut when trigger hairs are touched twice in quick succession, trapping unsuspecting prey. It is native to the subtropical wetlands of North and South Carolina.</string>
+    <string name="plant_venus_habitat">Subtropical wetlands of North and South Carolina, USA</string>
+    <string name="plant_venus_trapping">Active snap trap – triggered by sensitive hairs on trap lobes</string>
+
+    <!-- Plant: Sarracenia -->
+    <string name="plant_sarr_name">Sarracenia</string>
+    <string name="plant_sarr_short">North American pitcher plant with tubular leaves</string>
+    <string name="plant_sarr_long">Sarracenia, the North American pitcher plants, form elegant tubular leaves that act as pitfall traps. Insects are lured in by colorful patterns, nectar, and scent. Once inside, downward-pointing hairs and slippery waxy surfaces prevent escape, and digestive enzymes break down the prey into nutrients.</string>
+    <string name="plant_sarr_habitat">Bogs and fens of eastern North America</string>
+    <string name="plant_sarr_trapping">Pitfall trap – tubular leaf filled with digestive fluid</string>
+
+    <!-- Plant: Nepenthes -->
+    <string name="plant_nep_name">Nepenthes</string>
+    <string name="plant_nep_short">Tropical hanging pitcher plant</string>
+    <string name="plant_nep_long">Nepenthes, the tropical pitcher plants, form the largest genus of carnivorous plants. Their pendulous pitchers dangle from tendrils at the tips of leaves. The pitchers contain a viscoelastic digestive fluid that traps and digests everything from small insects to occasionally small vertebrates like frogs and even rats.</string>
+    <string name="plant_nep_habitat">Tropical rainforests of Southeast Asia, especially Borneo and Sumatra</string>
+    <string name="plant_nep_trapping">Pitfall trap – hanging pitcher with slippery peristome rim</string>
+
+    <!-- Plant: Sundew -->
+    <string name="plant_sundew_name">Sundew</string>
+    <string name="plant_sundew_short">Glistening sticky tentacles trap insects (Drosera)</string>
+    <string name="plant_sundew_long">Drosera, commonly known as sundews, is one of the largest genera of carnivorous plants with over 190 species. Their leaves are covered with reddish tentacles tipped with glistening droplets of sticky mucilage resembling dewdrops. Insects landing on the leaf are caught fast, and the tentacles curl inward to maximize digestion.</string>
+    <string name="plant_sundew_habitat">Every continent except Antarctica, from bogs to tropical savannas</string>
+    <string name="plant_sundew_trapping">Flypaper trap – adhesive mucilage on tentacles with active movement</string>
+
+    <!-- Plant: Bladderwort -->
+    <string name="plant_bladder_name">Bladderwort</string>
+    <string name="plant_bladder_short">Aquatic suction-trap plant (Utricularia)</string>
+    <string name="plant_bladder_long">Utricularia, or bladderworts, are the largest genus of carnivorous plants and possess the most sophisticated trapping mechanism in the plant kingdom. Their tiny bladder-shaped traps maintain negative internal pressure. When trigger hairs are touched, the trapdoor opens and the prey is sucked in within milliseconds — one of the fastest movements in the plant world.</string>
+    <string name="plant_bladder_habitat">Aquatic and semi-aquatic environments on every continent</string>
+    <string name="plant_bladder_trapping">Suction trap – ultra-fast vacuum bladder mechanism</string>
+
+    <!-- Plant: Butterwort -->
+    <string name="plant_butter_name">Butterwort</string>
+    <string name="plant_butter_short">Flat greasy leaves trap insects (Pinguicula)</string>
+    <string name="plant_butter_long">Pinguicula, commonly known as butterworts, have flat leaves covered with glandular cells that produce a sticky, greasy secretion. Small insects and even pollen grains become stuck to the surface. The leaves can slowly roll inward to maximize contact with captured prey. Many species also produce beautiful flowers resembling violets.</string>
+    <string name="plant_butter_habitat">Wet rocky surfaces from the Arctic to tropical Mexico and the Alps</string>
+    <string name="plant_butter_trapping">Flypaper trap – sticky glandular leaf surface with slow leaf movement</string>
+
+    <!-- Plant: Cobra Lily -->
+    <string name="plant_cobra_name">Cobra Lily</string>
+    <string name="plant_cobra_short">Snake-like pitcher native to California (Darlingtonia)</string>
+    <string name="plant_cobra_long">Darlingtonia californica, the cobra lily, is named for its remarkable resemblance to a rearing cobra snake. Uniquely among pitcher plants, it does not collect rainwater — it absorbs water through its roots from cold mountain streams. Translucent windows in the hood confuse trapped insects, causing them to exhaust themselves flying toward the false exits.</string>
+    <string name="plant_cobra_habitat">Cold mountain bogs and seeps in Oregon and northern California</string>
+    <string name="plant_cobra_trapping">Pitfall trap with false exits – translucent windows confuse prey</string>
+
+    <!-- Plant: Cephalotus -->
+    <string name="plant_cephalotus_name">Cephalotus</string>
+    <string name="plant_cephalotus_short">Albany pitcher plant, sole member of its family</string>
+    <string name="plant_cephalotus_long">Cephalotus follicularis, the Albany pitcher plant, is the sole member of its family and represents an independent evolution of carnivory. It is a small but remarkable plant producing both flat photosynthetic leaves and specialized pitcher-shaped leaves. Its pitchers are intricately structured with a ribbed, tooth-edged peristome and a protective lid to prevent rainwater dilution.</string>
+    <string name="plant_cephalotus_habitat">Peaty swamps near Albany, southwestern Australia</string>
+    <string name="plant_cephalotus_trapping">Pitfall trap – miniature pitcher with ribbed tooth-edged rim</string>
+
+    <!-- Wikipedia URLs – not translatable, defined once here -->
+    <string name="plant_venus_wiki" translatable="false">https://en.wikipedia.org/wiki/Venus_flytrap</string>
+    <string name="plant_sarr_wiki" translatable="false">https://en.wikipedia.org/wiki/Sarracenia</string>
+    <string name="plant_nep_wiki" translatable="false">https://en.wikipedia.org/wiki/Nepenthes</string>
+    <string name="plant_sundew_wiki" translatable="false">https://en.wikipedia.org/wiki/Drosera</string>
+    <string name="plant_bladder_wiki" translatable="false">https://en.wikipedia.org/wiki/Utricularia</string>
+    <string name="plant_butter_wiki" translatable="false">https://en.wikipedia.org/wiki/Pinguicula</string>
+    <string name="plant_cobra_wiki" translatable="false">https://en.wikipedia.org/wiki/Darlingtonia_californica</string>
+    <string name="plant_cephalotus_wiki" translatable="false">https://en.wikipedia.org/wiki/Cephalotus</string>
+</resources>

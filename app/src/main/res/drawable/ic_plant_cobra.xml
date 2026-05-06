@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cobra Lily (Darlingtonia): cobra-head shaped green pitcher with forked appendage -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Pitcher tube (body of cobra) -->
+    <path
+        android:fillColor="#43A047"
+        android:strokeColor="#2E7D32"
+        android:strokeWidth="1"
+        android:pathData="M38,85 Q35,60 40,42 Q44,30 50,28 Q56,30 60,42 Q65,60 62,85 Z" />
+
+    <!-- Tube highlights -->
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M44,80 Q42,58 46,44 Q48,36 50,35 Q52,36 54,44 Q58,58 56,80 Z" />
+
+    <!-- Translucent windows (lighter patches) -->
+    <path
+        android:fillColor="#C8E6C9"
+        android:pathData="M42,55 Q50,52 58,55 Q56,62 50,60 Q44,62 42,55 Z" />
+
+    <!-- Cobra hood (enlarged dome) -->
+    <path
+        android:fillColor="#388E3C"
+        android:strokeColor="#1B5E20"
+        android:strokeWidth="1"
+        android:pathData="M32,36 Q36,14 50,10 Q64,14 68,36 Q60,44 50,42 Q40,44 32,36 Z" />
+
+    <!-- Hood lighter area -->
+    <path
+        android:fillColor="#66BB6A"
+        android:pathData="M38,34 Q42,20 50,16 Q58,20 62,34 Q56,40 50,38 Q44,40 38,34 Z" />
+
+    <!-- Hood windows -->
+    <path
+        android:fillColor="#DCEDC8"
+        android:pathData="M42,30 Q50,26 58,30 Q55,36 50,34 Q45,36 42,30 Z" />
+
+    <!-- Forked tongue/fishtail appendage (red/maroon) -->
+    <path
+        android:fillColor="#D32F2F"
+        android:pathData="M44,42 Q40,52 36,56 Q38,58 42,54 Q46,52 50,46 Q54,52 58,54 Q62,58 64,56 Q60,52 56,42 Q53,44 50,44 Q47,44 44,42 Z" />
+
+    <!-- Base -->
+    <path
+        android:fillColor="#1B5E20"
+        android:pathData="M38,85 Q50,92 62,85 L60,92 Q50,96 40,92 Z" />
+
+    <!-- Ground leaves -->
+    <path
+        android:fillColor="#388E3C"
+        android:pathData="M20,90 Q35,84 50,86 Q65,84 80,90 Q65,96 50,94 Q35,96 20,90 Z" />
+
+</vector>

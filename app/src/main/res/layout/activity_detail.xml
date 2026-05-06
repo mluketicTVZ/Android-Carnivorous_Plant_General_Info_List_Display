@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".DetailActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:titleTextColor="@color/colorOnPrimary"
+        app:navigationIconTint="@color/colorOnPrimary"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Plant name -->
+            <TextView
+                android:id="@+id/txtDetailName"
+                style="@style/DetailTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                tools:text="Venus Flytrap" />
+
+            <!-- Plant image (clickable) -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginBottom="4dp">
+
+                <ImageView
+                    android:id="@+id/imgDetailPlant"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:background="@color/colorPrimaryContainer"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="@string/plant_venus_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:background="#80000000"
+                    android:padding="4dp"
+                    android:text="@string/label_tap_image"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+            </FrameLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="12dp"
+                android:background="@color/colorDivider" />
+
+            <!-- Long description -->
+            <TextView
+                android:id="@+id/txtDetailLongDesc"
+                style="@style/DetailBodyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                tools:text="Long description of the plant goes here." />
+
+            <!-- Habitat section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SectionLabelText"
+                android:text="@string/label_habitat"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/txtDetailHabitat"
+                style="@style/DetailBodyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                tools:text="Subtropical wetlands of North and South Carolina" />
+
+            <!-- Trapping mechanism section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SectionLabelText"
+                android:text="@string/label_trapping"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/txtDetailTrapping"
+                style="@style/DetailBodyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                tools:text="Active snap trap triggered by sensitive hairs" />
+
+            <!-- Wikipedia button (external activity) -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnWikipedia"
+                style="@style/WikiButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_learn_more"
+                android:layout_marginBottom="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

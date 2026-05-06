@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fleischfressende Pflanzen</string>
+
+    <!-- Titles -->
+    <string name="title_plant_list">Fleischfressende Pflanzen</string>
+    <string name="title_plant_detail">Pflanzendetails</string>
+    <string name="title_plant_image">Pflanzenbild</string>
+
+    <!-- Labels -->
+    <string name="label_habitat">Lebensraum</string>
+    <string name="label_trapping">Fangmechanismus</string>
+    <string name="label_learn_more">Mehr auf Wikipedia erfahren</string>
+    <string name="label_tap_image">Bild zum Vergrößern antippen</string>
+    <string name="label_back">Zurück</string>
+
+    <!-- Menu -->
+    <string name="menu_share">Teilen</string>
+
+    <!-- Share Dialog -->
+    <string name="share_dialog_title">Pflanze teilen</string>
+    <string name="share_dialog_message">Möchten Sie Informationen über diese Pflanze teilen?</string>
+    <string name="share_dialog_yes">Teilen</string>
+    <string name="share_dialog_no">Abbrechen</string>
+    <string name="broadcast_shared">Pflanze erfolgreich geteilt!</string>
+
+    <!-- Plant: Venus Flytrap -->
+    <string name="plant_venus_name">Venusfliegenfalle</string>
+    <string name="plant_venus_short">Aktive Schnappfalle, heimisch in den Carolinas</string>
+    <string name="plant_venus_long">Die Venusfliegenfalle (Dionaea muscipula) ist wohl die bekannteste fleischfressende Pflanze der Welt. Ihre Blätter haben sich zu einem Scharnierfall­mechanismus entwickelt, der zuschnappt, wenn Auslösehaare zweimal schnell berührt werden. Sie ist in den subtropischen Feuchtgebieten der Carolinas beheimatet.</string>
+    <string name="plant_venus_habitat">Subtropische Feuchtgebiete von Nord- und Südkarolina, USA</string>
+    <string name="plant_venus_trapping">Aktive Schnappfalle – ausgelöst durch empfindliche Haare</string>
+
+    <!-- Plant: Sarracenia -->
+    <string name="plant_sarr_name">Sarracenia</string>
+    <string name="plant_sarr_short">Nordamerikanische Schlauchpflanze mit röhrenförmigen Blättern</string>
+    <string name="plant_sarr_long">Sarracenia, die nordamerikanischen Kannenpflanzen, bilden elegante röhrenförmige Blätter als Fallgruben. Insekten werden durch bunte Muster, Nektar und Duft angelockt. Im Inneren verhindern abwärtsweisende Haare und rutschige Wachsoberflächen das Entkommen, und Verdauungsenzyme zersetzen die Beute.</string>
+    <string name="plant_sarr_habitat">Moore und Sümpfe im östlichen Nordamerika</string>
+    <string name="plant_sarr_trapping">Fallgrubenfall – röhrenförmiges Blatt mit Verdauungsflüssigkeit</string>
+
+    <!-- Plant: Nepenthes -->
+    <string name="plant_nep_name">Nepenthes</string>
+    <string name="plant_nep_short">Tropische hängende Kannenpflanze</string>
+    <string name="plant_nep_long">Nepenthes, die tropischen Kannenpflanzen, bilden die größte Gattung fleischfressender Pflanzen. Ihre hängenden Kannen baumeln an Ranken der Blattspitzen. Die Kannen enthalten eine viskoelastische Verdauungsflüssigkeit, die alles von kleinen Insekten bis gelegentlich Fröschen und sogar Ratten fängt und verdaut.</string>
+    <string name="plant_nep_habitat">Tropische Regenwälder Südostasiens, besonders Borneo und Sumatra</string>
+    <string name="plant_nep_trapping">Fallgrubenfall – hängende Kanne mit rutschigem Peristom</string>
+
+    <!-- Plant: Sundew -->
+    <string name="plant_sundew_name">Sonnentau</string>
+    <string name="plant_sundew_short">Glitzernde klebrige Tentakel fangen Insekten (Drosera)</string>
+    <string name="plant_sundew_long">Drosera, der Sonnentau, ist eine der größten Gattungen fleischfressender Pflanzen mit über 190 Arten. Ihre Blätter sind mit rötlichen Tentakeln bedeckt, die mit glitzernden klebrigen Schleimtröpfchen besetzt sind. Insekten bleiben kleben, und die Tentakel rollen sich ein, um die Verdauung zu maximieren.</string>
+    <string name="plant_sundew_habitat">Jeder Kontinent außer Antarktika, von Mooren bis zu tropischen Savannen</string>
+    <string name="plant_sundew_trapping">Klebfalle – klebrige Schleimstoffe auf Tentakeln mit aktiver Bewegung</string>
+
+    <!-- Plant: Bladderwort -->
+    <string name="plant_bladder_name">Wasserschlauch</string>
+    <string name="plant_bladder_short">Aquatische Saugfallenpflanze (Utricularia)</string>
+    <string name="plant_bladder_long">Utricularia, die Wasserschläuche, sind die größte Gattung fleischfressender Pflanzen und besitzen den ausgefeiltesten Fangmechanismus im Pflanzenreich. Ihre winzigen blasenförmigen Fallen stehen unter negativem Innendruck. Wenn Auslösehaare berührt werden, öffnet sich die Blase und saugt Beute in Millisekunden ein.</string>
+    <string name="plant_bladder_habitat">Aquatische und semi-aquatische Umgebungen auf jedem Kontinent</string>
+    <string name="plant_bladder_trapping">Saugfalle – ultraschneller Vakuum-Blasenmechanismus</string>
+
+    <!-- Plant: Butterwort -->
+    <string name="plant_butter_name">Fettkraut</string>
+    <string name="plant_butter_short">Flache fettige Blätter fangen Insekten (Pinguicula)</string>
+    <string name="plant_butter_long">Pinguicula, das Fettkraut, hat flache Blätter mit Drüsenzellen, die ein klebriges, fettiges Sekret produzieren. Kleine Insekten und sogar Pollenkörnchen haften an der Oberfläche. Die Blätter rollen sich langsam nach innen, um den Kontakt mit der Beute zu maximieren. Viele Arten erzeugen hübsche veilchenähnliche Blüten.</string>
+    <string name="plant_butter_habitat">Nasse Felsen von der Arktis bis zum tropischen Mexiko und den Alpen</string>
+    <string name="plant_butter_trapping">Klebfalle – klebrige Drüsenblattoberfläche mit langsamer Bewegung</string>
+
+    <!-- Plant: Cobra Lily -->
+    <string name="plant_cobra_name">Kobralilie</string>
+    <string name="plant_cobra_short">Schlangenähnliche Kanne aus Kalifornien (Darlingtonia)</string>
+    <string name="plant_cobra_long">Darlingtonia californica, die Kobralilie, ist nach ihrer Ähnlichkeit mit einer aufgerichteten Kobra benannt. Einzigartig unter Kannenpflanzen sammelt sie kein Regenwasser, sondern nimmt Wasser über Wurzeln aus kalten Bergbächen auf. Durchscheinende Fenster im Kapuzenbereich verwirren gefangene Insekten, die sich an falschen Ausgängen erschöpfen.</string>
+    <string name="plant_cobra_habitat">Kalte Moorgebiete und Quellen in Oregon und Nordkalifornien</string>
+    <string name="plant_cobra_trapping">Fallgrubenfall mit falschen Ausgängen – Fenster verwirren Beute</string>
+
+    <!-- Plant: Cephalotus -->
+    <string name="plant_cephalotus_name">Cephalotus</string>
+    <string name="plant_cephalotus_short">Albany-Kannenpflanze, einziges Mitglied ihrer Familie</string>
+    <string name="plant_cephalotus_long">Cephalotus follicularis, die Albany-Kannenpflanze, ist das einzige Mitglied ihrer Familie und steht für eine unabhängige Evolution der Karnivorie. Sie ist eine kleine, aber bemerkenswerte Pflanze mit flachen photosynthetischen Blättern und spezialisierten Kannenfallen. Ihre Kannen haben ein geripptes, gezähntes Peristom und einen schützenden Deckel.</string>
+    <string name="plant_cephalotus_habitat">Torfige Sümpfe nahe Albany, Südwestaustralien</string>
+    <string name="plant_cephalotus_trapping">Fallgrubenfall – Miniaturkanne mit gezähntem, geripptem Rand</string>
+</resources>

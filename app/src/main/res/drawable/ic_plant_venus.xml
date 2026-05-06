@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Venus Flytrap: two opposing trap lobes (green top, red bottom) with stem -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Stem -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M46,95 L54,95 L55,58 L45,58 Z" />
+
+    <!-- Upper lobe (green) -->
+    <path
+        android:fillColor="#66BB6A"
+        android:strokeColor="#2E7D32"
+        android:strokeWidth="1.5"
+        android:pathData="M18,52 Q18,8 50,8 Q82,8 82,52 Z" />
+
+    <!-- Upper lobe teeth -->
+    <path
+        android:fillColor="#1B5E20"
+        android:pathData="M18,52 L22,46 L26,52 L30,45 L34,52 L38,45 L42,52 L46,45 L50,52 L54,45 L58,52 L62,45 L66,52 L70,45 L74,52 L78,46 L82,52 Z" />
+
+    <!-- Lower lobe (red/crimson) -->
+    <path
+        android:fillColor="#EF5350"
+        android:strokeColor="#B71C1C"
+        android:strokeWidth="1.5"
+        android:pathData="M18,54 Q18,96 50,96 Q82,96 82,54 Z" />
+
+    <!-- Lower lobe teeth -->
+    <path
+        android:fillColor="#B71C1C"
+        android:pathData="M18,54 L22,60 L26,54 L30,61 L34,54 L38,61 L42,54 L46,61 L50,54 L54,61 L58,54 L62,61 L66,54 L70,61 L74,54 L78,60 L82,54 Z" />
+
+</vector>

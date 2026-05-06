@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mesožderke</string>
+
+    <!-- Titles -->
+    <string name="title_plant_list">Mesožderke</string>
+    <string name="title_plant_detail">Detalji biljke</string>
+    <string name="title_plant_image">Slika biljke</string>
+
+    <!-- Labels -->
+    <string name="label_habitat">Stanište</string>
+    <string name="label_trapping">Mehanizam hvatanja</string>
+    <string name="label_learn_more">Saznaj više na Wikipediji</string>
+    <string name="label_tap_image">Dodirni sliku za povećanje</string>
+    <string name="label_back">Natrag</string>
+
+    <!-- Menu -->
+    <string name="menu_share">Dijeli</string>
+
+    <!-- Share Dialog -->
+    <string name="share_dialog_title">Dijeli biljku</string>
+    <string name="share_dialog_message">Želiš li podijeliti informacije o ovoj biljci?</string>
+    <string name="share_dialog_yes">Dijeli</string>
+    <string name="share_dialog_no">Odustani</string>
+    <string name="broadcast_shared">Biljka uspješno podijeljena!</string>
+
+    <!-- Plant: Venus Flytrap -->
+    <string name="plant_venus_name">Venerin muholovac</string>
+    <string name="plant_venus_short">Aktivna zamka, izvorna iz Karoline</string>
+    <string name="plant_venus_long">Venerin muholovac (Dionaea muscipula) vjerojatno je najpoznatija mesožderka na svijetu. Listovi su evoluirali u mehanizam šarke koji se zatvara kada se okidačke dlačice dotaknu dvaput uzastopno, hvatajući plijen. Izvorna je za suptropske močvare Sjeverne i Južne Karoline.</string>
+    <string name="plant_venus_habitat">Suptropske močvare Sjeverne i Južne Karoline, SAD</string>
+    <string name="plant_venus_trapping">Aktivna zamka – okidaju je osjetljive dlačice na lobi</string>
+
+    <!-- Plant: Sarracenia -->
+    <string name="plant_sarr_name">Sarracenia</string>
+    <string name="plant_sarr_short">Sjevernoamerička biljka vrčica s tubularnim listovima</string>
+    <string name="plant_sarr_long">Sarracenia, poznate kao sjevernoameričke biljke vrčice, razvijaju elegantne tubularne listove koji funkcioniraju kao zamke jame. Insekti se privlače šarenim uzorcima, nektarom i mirisom. Unutar vrčice, dlačice usmjerene prema dolje i klizave voštane površine sprječavaju bijeg, a enzimi razgrađuju plijen.</string>
+    <string name="plant_sarr_habitat">Tresave i bari istočne Sjeverne Amerike</string>
+    <string name="plant_sarr_trapping">Zamka jame – tubularni list pun probavne tekućine</string>
+
+    <!-- Plant: Nepenthes -->
+    <string name="plant_nep_name">Nepenthes</string>
+    <string name="plant_nep_short">Tropska viseća biljka vrčica</string>
+    <string name="plant_nep_long">Nepenthes, tropske biljke vrčice, najveći su rod mesoždernih biljaka. Njihove viseće vrčice vise s vitica na vršcima listova. Vrčice sadrže viskoelastičnu probavnu tekućinu koja hvata i probavlja sve, od malih insekata do ponekad malih kralješnjaka poput žaba pa čak i štakora.</string>
+    <string name="plant_nep_habitat">Tropske kišne šume jugoistočne Azije, posebno Borneo i Sumatra</string>
+    <string name="plant_nep_trapping">Zamka jame – viseća vrčica s klizavim peristomom</string>
+
+    <!-- Plant: Sundew -->
+    <string name="plant_sundew_name">Rosika</string>
+    <string name="plant_sundew_short">Sjajne ljepljive resice hvataju insekte (Drosera)</string>
+    <string name="plant_sundew_long">Drosera, poznate kao rosike, jedan su od najvećih rodova mesoždernih biljaka s više od 190 vrsta. Listovi su prekriveni crvenkastim resicama s kapljicama ljepljive sluzi koje nalikuju kaplji rose. Insekti koji slete se zaglavljuju, a resice se uvijaju prema unutra za bolju probavu.</string>
+    <string name="plant_sundew_habitat">Svaki kontinent osim Antarktike, od tresava do tropskih savana</string>
+    <string name="plant_sundew_trapping">Ljepljiva zamka – ljepljiva sluznica na resicama s aktivnim pomicanjem</string>
+
+    <!-- Plant: Bladderwort -->
+    <string name="plant_bladder_name">Mješinarka</string>
+    <string name="plant_bladder_short">Vodena biljka sa zamkama usisavanjem (Utricularia)</string>
+    <string name="plant_bladder_long">Utricularia, ili mješinarke, najveći su rod mesoždernih biljaka i posjeduju najsofisticiraniji mehanizam hvatanja u biljnom kraljevstvu. Sitne zamke u obliku mješinaca održavaju negativni unutarnji tlak. Kada se okidač dotakne, zamka se otvori i usisa plijen za milisekunde.</string>
+    <string name="plant_bladder_habitat">Vodena i poluvodena staništa na svakom kontinentu</string>
+    <string name="plant_bladder_trapping">Zamka usisavanjem – ultrabrzi mehanizam vakuumske mješine</string>
+
+    <!-- Plant: Butterwort -->
+    <string name="plant_butter_name">Maslaček</string>
+    <string name="plant_butter_short">Ravni masni listovi hvataju insekte (Pinguicula)</string>
+    <string name="plant_butter_long">Pinguicula, poznata kao maslaček, ima ravne listove prekrivene žljezdanim stanicama koje proizvode ljepljivi masni izlučak. Mali insekti i čak pelud zaglavljuju se na površini. Listovi se mogu polako saviti prema unutra za bolji kontakt s plijenom. Mnoge vrste daju lijepe cvjetove nalik ljubičicama.</string>
+    <string name="plant_butter_habitat">Mokre stjenovite površine od Arktika do tropskog Meksika i Alpa</string>
+    <string name="plant_butter_trapping">Ljepljiva zamka – ljepljiva žljezdana površina lista s sporim pomicanjem</string>
+
+    <!-- Plant: Cobra Lily -->
+    <string name="plant_cobra_name">Kobra ljiljan</string>
+    <string name="plant_cobra_short">Zmijolika vrčica iz Kalifornije (Darlingtonia)</string>
+    <string name="plant_cobra_long">Darlingtonia californica, kobra ljiljan, dobila je ime po sličnosti s uspravljenom kobrom. Jedinstven među biljkama vrčicama, ne skuplja kišnicu nego apsorbira vodu korijenjem iz hladnih planinskih potoka. Prozirni prozori u kapuljači zbunjuju zarobljene insekte koji se iscrpe pokušavajući pobjeći kroz lažne izlaze.</string>
+    <string name="plant_cobra_habitat">Hladne planinske tresave i izvori u Oregonu i sjevernoj Kaliforniji</string>
+    <string name="plant_cobra_trapping">Zamka jame s lažnim izlazima – prozirni prozori zbunjuju plijen</string>
+
+    <!-- Plant: Cephalotus -->
+    <string name="plant_cephalotus_name">Cephalotus</string>
+    <string name="plant_cephalotus_short">Albanski vrčnjak, jedini član svoje porodice</string>
+    <string name="plant_cephalotus_long">Cephalotus follicularis, albanski vrčnjak, jedini je član svoje porodice i predstavlja neovisan evolucijski razvoj mesoždernosti. Mala je ali izvanredna biljka koja razvija i ravne fotosintetske listove i specijalizirane listove vrčice. Vrčice su složeno građene s rebrenim nazupčanim peristomom i zaštitnim poklopcem.</string>
+    <string name="plant_cephalotus_habitat">Tresetne bare blizu Albanija, jugozapadna Australija</string>
+    <string name="plant_cephalotus_trapping">Zamka jame – minijaturna vrčica s nazupčanim rebrenim rubom</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sundew (Drosera): circular rosette with radiating sticky tentacles -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Central leaf rosette -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M50,50 m-22,0 a22,22 0 1,0 44,0 a22,22 0 1,0 -44,0" />
+
+    <!-- Tentacle stalks (radiating lines) -->
+    <path
+        android:fillColor="@null"
+        android:strokeColor="#C62828"
+        android:strokeWidth="2"
+        android:pathData="M50,28 L50,10 M65,33 L78,18 M72,50 L92,50 M65,67 L78,82 M50,72 L50,90 M35,67 L22,82 M28,50 L8,50 M35,33 L22,18" />
+
+    <!-- Dewdrop tips (small circles at end of tentacles) -->
+    <path
+        android:fillColor="#FF8A65"
+        android:pathData="M50,10 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0
+                          M78,18 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0
+                          M92,50 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0
+                          M78,82 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0
+                          M50,90 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0
+                          M22,82 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0
+                          M8,50 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0
+                          M22,18 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+
+    <!-- Center highlight -->
+    <path
+        android:fillColor="#EF9A9A"
+        android:pathData="M50,50 m-10,0 a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0" />
+
+    <!-- Stem -->
+    <path
+        android:fillColor="#388E3C"
+        android:pathData="M46,72 L54,72 L54,96 L46,96 Z" />
+
+</vector>

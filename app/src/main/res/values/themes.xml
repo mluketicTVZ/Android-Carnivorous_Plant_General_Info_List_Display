@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.ListaLuketic" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorPrimaryContainer">@color/colorPrimaryContainer</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+        <item name="colorSecondaryContainer">@color/colorSecondaryContainer</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+    </style>
+
+    <style name="Theme.ListaLuketic" parent="Base.Theme.ListaLuketic" />
+
+    <!-- Custom Styles -->
+
+    <style name="PlantNameText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="PlantShortDescText">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/colorOnSurfaceVariant</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SectionLabelText">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+
+    <style name="DetailBodyText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorOnSurface</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+    </style>
+
+    <style name="DetailTitleText">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="PlantCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardElevation">4dp</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardBackgroundColor">@color/colorCardBackground</item>
+    </style>
+
+    <style name="WikiButton" parent="Widget.Material3.Button">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Butterwort (Pinguicula): flat star-shaped leaf rosette with violet flower -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Leaf 1 (bottom-right) -->
+    <path
+        android:fillColor="#7E57C2"
+        android:strokeColor="#4527A0"
+        android:strokeWidth="1"
+        android:pathData="M50,55 Q62,52 72,62 Q66,68 58,64 Z" />
+
+    <!-- Leaf 2 (right) -->
+    <path
+        android:fillColor="#9575CD"
+        android:strokeColor="#4527A0"
+        android:strokeWidth="1"
+        android:pathData="M52,50 Q68,44 76,50 Q72,58 64,56 Z" />
+
+    <!-- Leaf 3 (top-right) -->
+    <path
+        android:fillColor="#7E57C2"
+        android:strokeColor="#4527A0"
+        android:strokeWidth="1"
+        android:pathData="M50,46 Q58,32 70,30 Q72,40 64,44 Z" />
+
+    <!-- Leaf 4 (top-left) -->
+    <path
+        android:fillColor="#9575CD"
+        android:strokeColor="#4527A0"
+        android:strokeWidth="1"
+        android:pathData="M50,46 Q42,32 30,30 Q28,40 36,44 Z" />
+
+    <!-- Leaf 5 (left) -->
+    <path
+        android:fillColor="#7E57C2"
+        android:strokeColor="#4527A0"
+        android:strokeWidth="1"
+        android:pathData="M48,50 Q32,44 24,50 Q28,58 36,56 Z" />
+
+    <!-- Leaf 6 (bottom-left) -->
+    <path
+        android:fillColor="#9575CD"
+        android:strokeColor="#4527A0"
+        android:strokeWidth="1"
+        android:pathData="M50,55 Q38,52 28,62 Q34,68 42,64 Z" />
+
+    <!-- Leaf 7 (bottom) -->
+    <path
+        android:fillColor="#7E57C2"
+        android:strokeColor="#4527A0"
+        android:strokeWidth="1"
+        android:pathData="M50,56 Q44,70 46,82 Q50,86 54,82 Q56,70 50,56 Z" />
+
+    <!-- Center circle -->
+    <path
+        android:fillColor="#EDE7F6"
+        android:pathData="M50,50 m-8,0 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0" />
+
+    <!-- Flower stalk -->
+    <path
+        android:fillColor="@null"
+        android:strokeColor="#558B2F"
+        android:strokeWidth="2"
+        android:pathData="M54,42 Q58,28 56,14" />
+
+    <!-- Violet flower -->
+    <path
+        android:fillColor="#CE93D8"
+        android:strokeColor="#8E24AA"
+        android:strokeWidth="0.5"
+        android:pathData="M56,14 Q60,6 64,10 Q62,14 58,14 Q62,14 64,18 Q60,22 56,14 Q52,22 48,18 Q50,14 54,14 Q50,14 48,10 Q52,6 56,14 Z" />
+
+    <!-- Flower center -->
+    <path
+        android:fillColor="#FFEE58"
+        android:pathData="M56,14 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" />
+
+</vector>

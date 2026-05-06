@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bladderwort (Utricularia): aquatic stem with small oval bladder traps -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Main stems -->
+    <path
+        android:fillColor="@null"
+        android:strokeColor="#558B2F"
+        android:strokeWidth="2"
+        android:pathData="M20,80 Q35,60 50,50 Q65,40 80,20" />
+
+    <path
+        android:fillColor="@null"
+        android:strokeColor="#558B2F"
+        android:strokeWidth="2"
+        android:pathData="M30,90 Q40,70 55,62 Q65,55 75,35" />
+
+    <!-- Bladder traps (small yellow ovals) -->
+    <path
+        android:fillColor="#FDD835"
+        android:strokeColor="#F9A825"
+        android:strokeWidth="1"
+        android:pathData="M28,70 m-7,0 a7,5 0 1,0 14,0 a7,5 0 1,0 -14,0" />
+
+    <path
+        android:fillColor="#FDD835"
+        android:strokeColor="#F9A825"
+        android:strokeWidth="1"
+        android:pathData="M42,56 m-7,0 a7,5 0 1,0 14,0 a7,5 0 1,0 -14,0" />
+
+    <path
+        android:fillColor="#FDD835"
+        android:strokeColor="#F9A825"
+        android:strokeWidth="1"
+        android:pathData="M58,44 m-7,0 a7,5 0 1,0 14,0 a7,5 0 1,0 -14,0" />
+
+    <path
+        android:fillColor="#FDD835"
+        android:strokeColor="#F9A825"
+        android:strokeWidth="1"
+        android:pathData="M70,30 m-7,0 a7,5 0 1,0 14,0 a7,5 0 1,0 -14,0" />
+
+    <path
+        android:fillColor="#FDD835"
+        android:strokeColor="#F9A825"
+        android:strokeWidth="1"
+        android:pathData="M45,78 m-7,0 a7,5 0 1,0 14,0 a7,5 0 1,0 -14,0" />
+
+    <path
+        android:fillColor="#FDD835"
+        android:strokeColor="#F9A825"
+        android:strokeWidth="1"
+        android:pathData="M62,64 m-7,0 a7,5 0 1,0 14,0 a7,5 0 1,0 -14,0" />
+
+    <!-- Bladder trap doors (small dark semicircles) -->
+    <path
+        android:fillColor="#E65100"
+        android:pathData="M21,70 Q28,65 35,70 Q28,68 21,70 Z" />
+
+    <path
+        android:fillColor="#E65100"
+        android:pathData="M35,56 Q42,51 49,56 Q42,54 35,56 Z" />
+
+    <!-- Yellow flower at top -->
+    <path
+        android:fillColor="#FFEE58"
+        android:strokeColor="#F9A825"
+        android:strokeWidth="0.8"
+        android:pathData="M80,20 Q86,10 92,14 Q90,20 86,20 Q90,20 92,26 Q86,30 80,20 Q74,30 68,26 Q70,20 74,20 Q70,20 68,14 Q74,10 80,20 Z" />
+
+</vector>

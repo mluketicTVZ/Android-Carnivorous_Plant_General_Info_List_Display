@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cephalotus: small squat dark-red pitcher with ribbed lid -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Pitcher body (wide and squat) -->
+    <path
+        android:fillColor="#8D1C1C"
+        android:strokeColor="#5D0000"
+        android:strokeWidth="1"
+        android:pathData="M25,75 Q22,55 28,40 Q34,28 50,26 Q66,28 72,40 Q78,55 75,75 Z" />
+
+    <!-- Pitcher interior (darker) -->
+    <path
+        android:fillColor="#5D0000"
+        android:pathData="M34,72 Q32,55 36,44 Q42,34 50,32 Q58,34 64,44 Q68,55 66,72 Z" />
+
+    <!-- Ribs on pitcher body -->
+    <path
+        android:fillColor="@null"
+        android:strokeColor="#E57373"
+        android:strokeWidth="1"
+        android:pathData="M38,70 Q36,52 40,40 M50,70 L50,28 M62,70 Q64,52 60,40" />
+
+    <!-- Tooth-edged peristome/rim -->
+    <path
+        android:fillColor="#C62828"
+        android:pathData="M25,75 L30,70 L35,76 L40,70 L45,76 L50,70 L55,76 L60,70 L65,76 L70,70 L75,75 Q75,82 50,84 Q25,82 25,75 Z" />
+
+    <!-- Lid (ribbed and domed) -->
+    <path
+        android:fillColor="#B71C1C"
+        android:strokeColor="#7F0000"
+        android:strokeWidth="1"
+        android:pathData="M28,40 Q34,16 50,12 Q66,16 72,40 Q60,48 50,46 Q40,48 28,40 Z" />
+
+    <!-- Lid ribs -->
+    <path
+        android:fillColor="@null"
+        android:strokeColor="#EF9A9A"
+        android:strokeWidth="1"
+        android:pathData="M38,40 Q42,24 50,18 M50,40 L50,12 M62,40 Q58,24 50,18" />
+
+    <!-- Lid highlight -->
+    <path
+        android:fillColor="#EF5350"
+        android:pathData="M38,38 Q44,22 50,18 Q56,22 62,38 Q56,44 50,42 Q44,44 38,38 Z" />
+
+    <!-- Flat non-carnivorous leaf alongside -->
+    <path
+        android:fillColor="#558B2F"
+        android:pathData="M12,72 Q20,60 25,70 Q22,76 12,72 Z" />
+
+    <path
+        android:fillColor="#558B2F"
+        android:pathData="M88,72 Q80,60 75,70 Q78,76 88,72 Z" />
+
+    <!-- Ground base -->
+    <path
+        android:fillColor="#4E342E"
+        android:pathData="M25,82 Q50,88 75,82 L72,90 Q50,94 28,90 Z" />
+
+</vector>

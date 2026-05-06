@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Nepenthes: hanging orange pitcher with tendril and lid -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Vine/tendril from top -->
+    <path
+        android:fillColor="@null"
+        android:strokeColor="#558B2F"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M50,5 Q62,15 58,30" />
+
+    <!-- Pitcher lid -->
+    <path
+        android:fillColor="#E65100"
+        android:strokeColor="#BF360C"
+        android:strokeWidth="1"
+        android:pathData="M36,38 Q50,22 64,38 Q56,48 50,44 Q44,48 36,38 Z" />
+
+    <!-- Pitcher body (rounded teardrop) -->
+    <path
+        android:fillColor="#FF7043"
+        android:strokeColor="#E64A19"
+        android:strokeWidth="1"
+        android:pathData="M38,44 Q28,58 30,74 Q32,90 50,92 Q68,90 70,74 Q72,58 62,44 Q56,48 50,46 Q44,48 38,44 Z" />
+
+    <!-- Pitcher interior shade -->
+    <path
+        android:fillColor="#BF360C"
+        android:pathData="M44,50 Q38,60 40,74 Q42,84 50,86 Q58,84 60,74 Q62,60 56,50 Q53,53 50,52 Q47,53 44,50 Z" />
+
+    <!-- Peristome/rim highlight -->
+    <path
+        android:fillColor="#FFCCBC"
+        android:pathData="M38,48 Q50,56 62,48 Q60,52 50,54 Q40,52 38,48 Z" />
+
+    <!-- Leaf at top -->
+    <path
+        android:fillColor="#558B2F"
+        android:pathData="M50,5 Q30,8 25,20 Q40,16 50,18 Q60,16 75,20 Q70,8 50,5 Z" />
+
+</vector>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Required to open Wikipedia links in the browser -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ListaLuketic">
+
+        <!-- Activity 1: Plant list (launcher) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/title_plant_list">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity 2: Plant details -->
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false"
+            android:label="@string/title_plant_detail"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- Activity 3: Full-screen plant image -->
+        <activity
+            android:name=".ImageActivity"
+            android:exported="false"
+            android:label="@string/title_plant_image"
+            android:parentActivityName=".DetailActivity" />
+
+        <!-- Broadcast receiver: catches the custom PLANT_SHARED broadcast -->
+        <receiver
+            android:name=".ShareBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="hr.tvz.android.listaluketic.PLANT_SHARED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
