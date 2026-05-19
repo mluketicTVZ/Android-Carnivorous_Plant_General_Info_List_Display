@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
 
+    // KSP za Room
+    alias(libs.plugins.ksp)
+
     // Add the Google services Gradle plugin
     id("com.google.gms.google-services")
 }
@@ -57,4 +60,8 @@ dependencies {
 
     // Firebase Cloud Messaging
     implementation("com.google.firebase:firebase-messaging")
+
+    // Room database
+    implementation(libs.androidx.room.runtime)
+    ksp(libs.androidx.room.compiler)
 }

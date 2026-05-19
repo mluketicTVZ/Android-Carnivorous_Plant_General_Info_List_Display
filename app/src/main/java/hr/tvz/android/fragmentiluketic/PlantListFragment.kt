@@ -39,11 +39,24 @@ class PlantListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.recyclerViewFragment.layoutManager = LinearLayoutManager(requireContext())
-        binding.recyclerViewFragment.adapter = PlantAdapter(buildPlantList()) { plant ->
-            listener?.onPlantSelected(plant)
-        }
         binding.recyclerViewFragment.layoutAnimation =
             AnimationUtils.loadLayoutAnimation(requireContext(), R.anim.layout_slide_in)
+
+        val context = requireContext()
+        val db = PlantDatabase.getInstance(context)
+
+        Thread {
+            val dao = db.plantDao()
+            if (dao.count() == 0) {
+                dao.insertAll(buildPlantList(context))
+            }
+            val plants = dao.getAll()
+            requireActivity().runOnUiThread {
+                binding.recyclerViewFragment.adapter = PlantAdapter(plants) { plant ->
+                    listener?.onPlantSelected(plant)
+                }
+            }
+        }.start()
     }
 
     override fun onDestroyView() {
@@ -56,7 +69,7 @@ class PlantListFragment : Fragment() {
         listener = null
     }
 
-    private fun buildPlantList(): List<CarnivorousPlant> = listOf(
+    private fun buildPlantList(context: Context): List<CarnivorousPlant> = listOf(
         CarnivorousPlant(
             id             = 0,
             nameResId      = R.string.plant_venus_name,
@@ -65,7 +78,7 @@ class PlantListFragment : Fragment() {
             habitatResId   = R.string.plant_venus_habitat,
             trappingResId  = R.string.plant_venus_trapping,
             drawableResId  = R.drawable.ic_plant_venus,
-            wikiUrl        = getString(R.string.plant_venus_wiki)
+            wikiUrl        = context.getString(R.string.plant_venus_wiki)
         ),
         CarnivorousPlant(
             id             = 1,
@@ -75,7 +88,7 @@ class PlantListFragment : Fragment() {
             habitatResId   = R.string.plant_sarr_habitat,
             trappingResId  = R.string.plant_sarr_trapping,
             drawableResId  = R.drawable.ic_plant_sarracenia,
-            wikiUrl        = getString(R.string.plant_sarr_wiki)
+            wikiUrl        = context.getString(R.string.plant_sarr_wiki)
         ),
         CarnivorousPlant(
             id             = 2,
@@ -85,7 +98,7 @@ class PlantListFragment : Fragment() {
             habitatResId   = R.string.plant_nep_habitat,
             trappingResId  = R.string.plant_nep_trapping,
             drawableResId  = R.drawable.ic_plant_nepenthes,
-            wikiUrl        = getString(R.string.plant_nep_wiki)
+            wikiUrl        = context.getString(R.string.plant_nep_wiki)
         ),
         CarnivorousPlant(
             id             = 3,
@@ -95,7 +108,7 @@ class PlantListFragment : Fragment() {
             habitatResId   = R.string.plant_sundew_habitat,
             trappingResId  = R.string.plant_sundew_trapping,
             drawableResId  = R.drawable.ic_plant_sundew,
-            wikiUrl        = getString(R.string.plant_sundew_wiki)
+            wikiUrl        = context.getString(R.string.plant_sundew_wiki)
         ),
         CarnivorousPlant(
             id             = 4,
@@ -105,7 +118,7 @@ class PlantListFragment : Fragment() {
             habitatResId   = R.string.plant_bladder_habitat,
             trappingResId  = R.string.plant_bladder_trapping,
             drawableResId  = R.drawable.ic_plant_bladderwort,
-            wikiUrl        = getString(R.string.plant_bladder_wiki)
+            wikiUrl        = context.getString(R.string.plant_bladder_wiki)
         ),
         CarnivorousPlant(
             id             = 5,
@@ -115,7 +128,7 @@ class PlantListFragment : Fragment() {
             habitatResId   = R.string.plant_butter_habitat,
             trappingResId  = R.string.plant_butter_trapping,
             drawableResId  = R.drawable.ic_plant_butterwort,
-            wikiUrl        = getString(R.string.plant_butter_wiki)
+            wikiUrl        = context.getString(R.string.plant_butter_wiki)
         ),
         CarnivorousPlant(
             id             = 6,
@@ -125,7 +138,7 @@ class PlantListFragment : Fragment() {
             habitatResId   = R.string.plant_cobra_habitat,
             trappingResId  = R.string.plant_cobra_trapping,
             drawableResId  = R.drawable.ic_plant_cobra,
-            wikiUrl        = getString(R.string.plant_cobra_wiki)
+            wikiUrl        = context.getString(R.string.plant_cobra_wiki)
         ),
         CarnivorousPlant(
             id             = 7,
@@ -135,7 +148,7 @@ class PlantListFragment : Fragment() {
             habitatResId   = R.string.plant_cephalotus_habitat,
             trappingResId  = R.string.plant_cephalotus_trapping,
             drawableResId  = R.drawable.ic_plant_cephalotus,
-            wikiUrl        = getString(R.string.plant_cephalotus_wiki)
+            wikiUrl        = context.getString(R.string.plant_cephalotus_wiki)
         )
     )
 }
