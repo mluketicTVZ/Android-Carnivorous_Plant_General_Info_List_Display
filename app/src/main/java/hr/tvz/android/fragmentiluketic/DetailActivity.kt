@@ -1,4 +1,4 @@
-package hr.tvz.android.listaluketic
+package hr.tvz.android.fragmentiluketic
 
 import android.content.Intent
 import android.net.Uri
@@ -10,7 +10,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import hr.tvz.android.listaluketic.databinding.ActivityDetailBinding
+import hr.tvz.android.fragmentiluketic.databinding.ActivityDetailBinding
 
 class DetailActivity : AppCompatActivity() {
 

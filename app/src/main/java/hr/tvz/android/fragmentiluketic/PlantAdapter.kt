@@ -1,10 +1,10 @@
-package hr.tvz.android.listaluketic
+package hr.tvz.android.fragmentiluketic
 
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import hr.tvz.android.listaluketic.databinding.ItemPlantBinding
+import hr.tvz.android.fragmentiluketic.databinding.ItemPlantBinding
 
 class PlantAdapter(
     private val plants: List<CarnivorousPlant>

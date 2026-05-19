@@ -1,4 +1,4 @@
-package hr.tvz.android.listaluketic
+package hr.tvz.android.fragmentiluketic
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -15,6 +15,6 @@ class ShareBroadcastReceiver : BroadcastReceiver() {
     }
 
     companion object {
-        const val ACTION_PLANT_SHARED = "hr.tvz.android.listaluketic.PLANT_SHARED"
+        const val ACTION_PLANT_SHARED = "hr.tvz.android.fragmentiluketic.PLANT_SHARED"
     }
 }

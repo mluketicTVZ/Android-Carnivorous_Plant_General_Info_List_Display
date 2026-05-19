@@ -1,11 +1,11 @@
-package hr.tvz.android.listaluketic
+package hr.tvz.android.fragmentiluketic
 
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import hr.tvz.android.listaluketic.databinding.ActivityImageBinding
+import hr.tvz.android.fragmentiluketic.databinding.ActivityImageBinding
 
 class ImageActivity : AppCompatActivity() {
 

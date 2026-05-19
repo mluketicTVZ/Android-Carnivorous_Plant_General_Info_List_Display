@@ -1,4 +1,4 @@
-package hr.tvz.android.listaluketic
+package hr.tvz.android.fragmentiluketic
 
 import org.junit.Test
 

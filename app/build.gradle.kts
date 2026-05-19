@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "hr.tvz.android.listaluketic"
+    namespace = "hr.tvz.android.fragmentiluketic"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "hr.tvz.android.listaluketic"
+        applicationId = "hr.tvz.android.fragmentiluketic"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
