@@ -7,6 +7,9 @@
     <string name="title_plant_detail">Pflanzendetails</string>
     <string name="title_plant_image">Pflanzenbild</string>
 
+    <!-- Fragment hints -->
+    <string name="hint_select_plant">Wählen Sie eine Pflanze aus der Liste aus</string>
+
     <!-- Labels -->
     <string name="label_habitat">Lebensraum</string>
     <string name="label_trapping">Fangmechanismus</string>

@@ -6,6 +6,9 @@
     <string name="title_plant_detail">Plant Details</string>
     <string name="title_plant_image">Plant Image</string>
 
+    <!-- Fragment hints -->
+    <string name="hint_select_plant">Select a plant from the list to see its details</string>
+
     <!-- Labels -->
     <string name="label_habitat">Habitat</string>
     <string name="label_trapping">Trapping Mechanism</string>

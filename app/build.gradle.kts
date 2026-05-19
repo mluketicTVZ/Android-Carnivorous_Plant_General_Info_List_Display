@@ -1,5 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
+
+    // Add the Google services Gradle plugin
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -48,4 +51,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
+
+    // Import the Firebase BoM
+    implementation(platform("com.google.firebase:firebase-bom:34.13.0"))
+
+    // Firebase Cloud Messaging
+    implementation("com.google.firebase:firebase-messaging")
 }

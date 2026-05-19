@@ -7,6 +7,9 @@
     <string name="title_plant_detail">Detalji biljke</string>
     <string name="title_plant_image">Slika biljke</string>
 
+    <!-- Fragment hints -->
+    <string name="hint_select_plant">Odaberite biljku s popisa za prikaz detalja</string>
+
     <!-- Labels -->
     <string name="label_habitat">Stanište</string>
     <string name="label_trapping">Mehanizam hvatanja</string>

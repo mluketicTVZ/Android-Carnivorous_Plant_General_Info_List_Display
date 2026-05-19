@@ -1,21 +1,35 @@
 package hr.tvz.android.fragmentiluketic
 
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
-import android.view.animation.AnimationUtils
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.recyclerview.widget.LinearLayoutManager
 import hr.tvz.android.fragmentiluketic.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), PlantListFragment.OnPlantSelectedListener {
 
     private lateinit var binding: ActivityMainBinding
+    private var isTwoPane = false
+
+    private val requestNotificationPermission =
+        registerForActivityResult(ActivityResultContracts.RequestPermission()) { /* no-op */ }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
+            ContextCompat.checkSelfPermission(this, android.Manifest.permission.POST_NOTIFICATIONS)
+                != PackageManager.PERMISSION_GRANTED
+        ) {
+            requestNotificationPermission.launch(android.Manifest.permission.POST_NOTIFICATIONS)
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(binding.main) { v, insets ->
             val bars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -25,92 +39,29 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
 
-        binding.recyclerView.layoutManager = LinearLayoutManager(this)
-        binding.recyclerView.adapter = PlantAdapter(buildPlantList())
+        // detailContainer only exists in the landscape (layout-land) variant
+        isTwoPane = findViewById<android.view.View?>(R.id.detailContainer) != null
 
-        binding.recyclerView.layoutAnimation = AnimationUtils.loadLayoutAnimation(this, R.anim.layout_slide_in)
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragmentContainer, PlantListFragment())
+                .commit()
+        }
     }
 
-    private fun buildPlantList(): List<CarnivorousPlant> = listOf(
-        CarnivorousPlant(
-            id             = 0,
-            nameResId      = R.string.plant_venus_name,
-            shortDescResId = R.string.plant_venus_short,
-            longDescResId  = R.string.plant_venus_long,
-            habitatResId   = R.string.plant_venus_habitat,
-            trappingResId  = R.string.plant_venus_trapping,
-            drawableResId  = R.drawable.ic_plant_venus,
-            wikiUrl        = getString(R.string.plant_venus_wiki)
-        ),
-        CarnivorousPlant(
-            id             = 1,
-            nameResId      = R.string.plant_sarr_name,
-            shortDescResId = R.string.plant_sarr_short,
-            longDescResId  = R.string.plant_sarr_long,
-            habitatResId   = R.string.plant_sarr_habitat,
-            trappingResId  = R.string.plant_sarr_trapping,
-            drawableResId  = R.drawable.ic_plant_sarracenia,
-            wikiUrl        = getString(R.string.plant_sarr_wiki)
-        ),
-        CarnivorousPlant(
-            id             = 2,
-            nameResId      = R.string.plant_nep_name,
-            shortDescResId = R.string.plant_nep_short,
-            longDescResId  = R.string.plant_nep_long,
-            habitatResId   = R.string.plant_nep_habitat,
-            trappingResId  = R.string.plant_nep_trapping,
-            drawableResId  = R.drawable.ic_plant_nepenthes,
-            wikiUrl        = getString(R.string.plant_nep_wiki)
-        ),
-        CarnivorousPlant(
-            id             = 3,
-            nameResId      = R.string.plant_sundew_name,
-            shortDescResId = R.string.plant_sundew_short,
-            longDescResId  = R.string.plant_sundew_long,
-            habitatResId   = R.string.plant_sundew_habitat,
-            trappingResId  = R.string.plant_sundew_trapping,
-            drawableResId  = R.drawable.ic_plant_sundew,
-            wikiUrl        = getString(R.string.plant_sundew_wiki)
-        ),
-        CarnivorousPlant(
-            id             = 4,
-            nameResId      = R.string.plant_bladder_name,
-            shortDescResId = R.string.plant_bladder_short,
-            longDescResId  = R.string.plant_bladder_long,
-            habitatResId   = R.string.plant_bladder_habitat,
-            trappingResId  = R.string.plant_bladder_trapping,
-            drawableResId  = R.drawable.ic_plant_bladderwort,
-            wikiUrl        = getString(R.string.plant_bladder_wiki)
-        ),
-        CarnivorousPlant(
-            id             = 5,
-            nameResId      = R.string.plant_butter_name,
-            shortDescResId = R.string.plant_butter_short,
-            longDescResId  = R.string.plant_butter_long,
-            habitatResId   = R.string.plant_butter_habitat,
-            trappingResId  = R.string.plant_butter_trapping,
-            drawableResId  = R.drawable.ic_plant_butterwort,
-            wikiUrl        = getString(R.string.plant_butter_wiki)
-        ),
-        CarnivorousPlant(
-            id             = 6,
-            nameResId      = R.string.plant_cobra_name,
-            shortDescResId = R.string.plant_cobra_short,
-            longDescResId  = R.string.plant_cobra_long,
-            habitatResId   = R.string.plant_cobra_habitat,
-            trappingResId  = R.string.plant_cobra_trapping,
-            drawableResId  = R.drawable.ic_plant_cobra,
-            wikiUrl        = getString(R.string.plant_cobra_wiki)
-        ),
-        CarnivorousPlant(
-            id             = 7,
-            nameResId      = R.string.plant_cephalotus_name,
-            shortDescResId = R.string.plant_cephalotus_short,
-            longDescResId  = R.string.plant_cephalotus_long,
-            habitatResId   = R.string.plant_cephalotus_habitat,
-            trappingResId  = R.string.plant_cephalotus_trapping,
-            drawableResId  = R.drawable.ic_plant_cephalotus,
-            wikiUrl        = getString(R.string.plant_cephalotus_wiki)
-        )
-    )
+    override fun onPlantSelected(plant: CarnivorousPlant) {
+        if (isTwoPane) {
+            // Landscape: show detail in the right pane, hide the placeholder hint
+            findViewById<android.view.View?>(R.id.txtDetailHint)?.visibility = android.view.View.GONE
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.detailContainer, PlantDetailFragment.newInstance(plant))
+                .commit()
+        } else {
+            // Portrait: open DetailActivity as before
+            val intent = Intent(this, DetailActivity::class.java).apply {
+                putExtra(CarnivorousPlant.EXTRA_KEY, plant)
+            }
+            startActivity(intent)
+        }
+    }
 }

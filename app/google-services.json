@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "402583841599",
+    "project_id": "fragmentiandroid2026",
+    "storage_bucket": "fragmentiandroid2026.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402583841599:android:ad20476026ec0382a5418a",
+        "android_client_info": {
+          "package_name": "hr.tvz.android.fragmentiluketic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdRknsz0o9wW_b7jo3b44CZ-_1ft-WM80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

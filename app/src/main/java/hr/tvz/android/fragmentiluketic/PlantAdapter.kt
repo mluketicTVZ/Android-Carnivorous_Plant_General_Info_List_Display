@@ -1,13 +1,13 @@
 package hr.tvz.android.fragmentiluketic
 
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import hr.tvz.android.fragmentiluketic.databinding.ItemPlantBinding
 
 class PlantAdapter(
-    private val plants: List<CarnivorousPlant>
+    private val plants: List<CarnivorousPlant>,
+    private val onItemClick: (CarnivorousPlant) -> Unit
 ) : RecyclerView.Adapter<PlantAdapter.PlantViewHolder>() {
 
     inner class PlantViewHolder(val binding: ItemPlantBinding) : RecyclerView.ViewHolder(binding.root)
@@ -26,10 +26,7 @@ class PlantAdapter(
         holder.binding.imgPlantThumb.setImageResource(plant.drawableResId)
 
         holder.binding.root.setOnClickListener {
-            val intent = Intent(ctx, DetailActivity::class.java).apply {
-                putExtra(CarnivorousPlant.EXTRA_KEY, plant)
-            }
-            ctx.startActivity(intent)
+            onItemClick(plant)
         }
     }
 

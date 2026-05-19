@@ -19,13 +19,9 @@
         app:titleTextColor="@color/colorOnPrimary"
         app:navigationIconTint="@color/colorOnPrimary" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:clipToPadding="false"
-        android:paddingTop="8dp"
-        android:paddingBottom="16dp"
-        tools:listitem="@layout/item_plant" />
+        android:layout_height="match_parent" />
 
 </LinearLayout>
