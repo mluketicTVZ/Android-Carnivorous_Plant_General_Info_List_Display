@@ -1,4 +1,4 @@
-package hr.tvz.android.fragmentiluketic
+package hr.tvz.android.mvpluketic
 
 import android.os.Parcel
 import android.os.Parcelable

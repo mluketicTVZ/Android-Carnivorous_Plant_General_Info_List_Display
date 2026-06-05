@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "FragmentiLuketic"
+rootProject.name = "MVPLuketic"
 include(":app")

@@ -44,15 +44,16 @@
                 android:layout_height="220dp"
                 android:layout_marginBottom="4dp">
 
-                <ImageView
+                <com.facebook.drawee.view.SimpleDraweeView
                     android:id="@+id/imgDetailPlant"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="fitCenter"
                     android:background="@color/colorPrimaryContainer"
                     android:clickable="true"
                     android:focusable="true"
-                    android:contentDescription="@string/plant_venus_name" />
+                    android:contentDescription="@string/plant_venus_name"
+                    app:actualImageScaleType="fitCenter"
+                    app:placeholderImage="@drawable/ic_launcher_foreground" />
 
                 <TextView
                     android:layout_width="wrap_content"

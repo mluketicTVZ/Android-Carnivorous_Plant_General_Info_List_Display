@@ -9,7 +9,7 @@ plugins {
 }
 
 android {
-    namespace = "hr.tvz.android.fragmentiluketic"
+    namespace = "hr.tvz.android.mvpluketic"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -17,7 +17,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "hr.tvz.android.fragmentiluketic"
+        applicationId = "hr.tvz.android.mvpluketic"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
@@ -42,6 +42,14 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    packaging {
+        jniLibs {
+            useLegacyPackaging = false
+        }
+    }
+    lint {
+        disable += "16KbPageAlignment"
+    }
 }
 
 dependencies {
@@ -64,4 +72,15 @@ dependencies {
     // Room database
     implementation(libs.androidx.room.runtime)
     ksp(libs.androidx.room.compiler)
+
+    // Retrofit + Gson (Firestore REST API)
+    implementation(libs.retrofit2)
+    implementation(libs.retrofit2.gson)
+    implementation(libs.okhttp3.okhttp)
+
+    // Fresco (image loading from URL)
+    implementation(libs.fresco)
+
+    // Firebase Firestore + Storage (seeding plant data/images)
+    implementation("com.google.firebase:firebase-firestore")
 }

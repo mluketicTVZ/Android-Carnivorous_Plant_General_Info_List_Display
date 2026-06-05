@@ -8,7 +8,12 @@
     <!-- Required for push notifications on Android 13+ -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
+    <!-- Required for foreground music service -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+
     <application
+        android:name=".MVPApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -16,7 +21,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FragmentiLuketic">
+        android:theme="@style/Theme.MVPLuketic">
 
         <!-- Activity 1: Plant list (launcher) -->
         <activity
@@ -48,7 +53,7 @@
             android:name=".ShareBroadcastReceiver"
             android:exported="false">
             <intent-filter>
-                <action android:name="hr.tvz.android.fragmentiluketic.PLANT_SHARED" />
+                <action android:name="hr.tvz.android.mvpluketic.PLANT_SHARED" />
             </intent-filter>
         </receiver>
 
@@ -60,6 +65,24 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
+        <!-- Background music service -->
+        <service
+            android:name=".MusicService"
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback" />
+
+        <!-- Homescreen widget -->
+        <receiver
+            android:name=".PlantWidget"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/plant_widget_info" />
+        </receiver>
 
     </application>
 

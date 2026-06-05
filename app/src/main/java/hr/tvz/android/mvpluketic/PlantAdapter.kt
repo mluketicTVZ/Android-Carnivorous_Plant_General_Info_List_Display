@@ -1,13 +1,15 @@
-package hr.tvz.android.fragmentiluketic
+package hr.tvz.android.mvpluketic
 
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import hr.tvz.android.fragmentiluketic.databinding.ItemPlantBinding
+import hr.tvz.android.mvpluketic.databinding.ItemPlantBinding
+import hr.tvz.android.mvpluketic.model.Plant
 
 class PlantAdapter(
-    private val plants: List<CarnivorousPlant>,
-    private val onItemClick: (CarnivorousPlant) -> Unit
+    private val plants: List<Plant>,
+    private val onItemClick: (Plant) -> Unit
 ) : RecyclerView.Adapter<PlantAdapter.PlantViewHolder>() {
 
     inner class PlantViewHolder(val binding: ItemPlantBinding) : RecyclerView.ViewHolder(binding.root)
@@ -19,15 +21,10 @@ class PlantAdapter(
 
     override fun onBindViewHolder(holder: PlantViewHolder, position: Int) {
         val plant = plants[position]
-        val ctx   = holder.itemView.context
-
-        holder.binding.txtPlantName.text      = ctx.getString(plant.nameResId)
-        holder.binding.txtPlantShortDesc.text = ctx.getString(plant.shortDescResId)
-        holder.binding.imgPlantThumb.setImageResource(plant.drawableResId)
-
-        holder.binding.root.setOnClickListener {
-            onItemClick(plant)
-        }
+        holder.binding.txtPlantName.text      = plant.name
+        holder.binding.txtPlantShortDesc.text = plant.shortDesc
+        holder.binding.imgPlantThumb.setImageURI(Uri.parse(plant.imageUrl))
+        holder.binding.root.setOnClickListener { onItemClick(plant) }
     }
 
     override fun getItemCount(): Int = plants.size

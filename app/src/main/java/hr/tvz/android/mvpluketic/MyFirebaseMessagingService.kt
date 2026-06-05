@@ -1,4 +1,4 @@
-package hr.tvz.android.fragmentiluketic
+package hr.tvz.android.mvpluketic
 
 import android.app.NotificationChannel
 import android.app.NotificationManager

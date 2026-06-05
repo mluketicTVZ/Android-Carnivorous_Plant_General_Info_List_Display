@@ -18,14 +18,13 @@
         app:navigationIconTint="@color/white"
         app:navigationIcon="@drawable/ic_arrow_back" />
 
-    <ImageView
+    <com.facebook.drawee.view.SimpleDraweeView
         android:id="@+id/imgFullscreen"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:scaleType="fitCenter"
         android:padding="16dp"
         android:contentDescription="@string/title_plant_image"
-        tools:src="@drawable/ic_plant_venus" />
+        app:actualImageScaleType="fitCenter" />
 
 </LinearLayout>

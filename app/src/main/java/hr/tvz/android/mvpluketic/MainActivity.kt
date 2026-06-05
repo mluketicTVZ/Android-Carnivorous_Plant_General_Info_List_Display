@@ -1,4 +1,4 @@
-package hr.tvz.android.fragmentiluketic
+package hr.tvz.android.mvpluketic
 
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -9,7 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import hr.tvz.android.fragmentiluketic.databinding.ActivityMainBinding
+import hr.tvz.android.mvpluketic.databinding.ActivityMainBinding
+import hr.tvz.android.mvpluketic.model.Plant
 
 class MainActivity : AppCompatActivity(), PlantListFragment.OnPlantSelectedListener {
 
@@ -49,7 +50,7 @@ class MainActivity : AppCompatActivity(), PlantListFragment.OnPlantSelectedListe
         }
     }
 
-    override fun onPlantSelected(plant: CarnivorousPlant) {
+    override fun onPlantSelected(plant: Plant) {
         if (isTwoPane) {
             // Landscape: show detail in the right pane, hide the placeholder hint
             findViewById<android.view.View?>(R.id.txtDetailHint)?.visibility = android.view.View.GONE
@@ -59,7 +60,7 @@ class MainActivity : AppCompatActivity(), PlantListFragment.OnPlantSelectedListe
         } else {
             // Portrait: open DetailActivity as before
             val intent = Intent(this, DetailActivity::class.java).apply {
-                putExtra(CarnivorousPlant.EXTRA_KEY, plant)
+                putExtra(Plant.EXTRA_KEY, plant)
             }
             startActivity(intent)
         }
