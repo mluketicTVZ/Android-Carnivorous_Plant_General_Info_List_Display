@@ -19,9 +19,16 @@ class PlantWidget : AppWidgetProvider() {
         appWidgetManager: AppWidgetManager,
         appWidgetIds: IntArray
     ) {
+        // goAsync() keeps the BroadcastReceiver process alive until finish() is called,
+        // preventing Android from killing it before the async Retrofit callback fires.
+        val pendingResult = goAsync()
+
         PlantRepository.getPlants(
             onSuccess = { plants ->
-                val plant = plants.lastOrNull() ?: return@getPlants
+                val plant = plants.lastOrNull() ?: run {
+                    pendingResult.finish()
+                    return@getPlants
+                }
                 appWidgetIds.forEach { widgetId ->
                     val views = RemoteViews(context.packageName, R.layout.widget_plant)
 
@@ -37,7 +44,10 @@ class PlantWidget : AppWidgetProvider() {
                     views.setOnClickPendingIntent(R.id.widget_title, pending)
                     views.setOnClickPendingIntent(R.id.widget_image, pending)
 
-                    // Load image on background thread then update widget
+                    // Show text immediately before image loads
+                    appWidgetManager.updateAppWidget(widgetId, views)
+
+                    // Load image on background thread then update widget again with bitmap
                     Thread {
                         val bitmap = loadBitmapFromUrl(plant.imageUrl)
                             ?: drawableToBitmap(context, R.drawable.ic_launcher_foreground)
@@ -45,10 +55,13 @@ class PlantWidget : AppWidgetProvider() {
                             views.setImageViewBitmap(R.id.widget_image, bitmap)
                         }
                         appWidgetManager.updateAppWidget(widgetId, views)
+                        pendingResult.finish()
                     }.start()
                 }
             },
-            onError = { /* keep previous widget state */ }
+            onError = {
+                pendingResult.finish()
+            }
         )
     }
 
